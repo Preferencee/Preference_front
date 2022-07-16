@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".login">
+    tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -26,127 +26,133 @@
         android:layout_width="329dp"
         android:layout_height="40dp"
         android:layout_marginStart="34dp"
-        android:layout_marginTop="71dp"
+        android:layout_marginTop="319dp"
         android:layout_marginEnd="27dp"
+        android:layout_marginBottom="485dp"
         android:background="@drawable/border"
         android:ems="10"
-        android:hint="    아이디"
+        android:hint="아이디"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/et_pass"
         android:layout_width="329dp"
         android:layout_height="40dp"
-        android:layout_marginTop="33dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="392dp"
+        android:layout_marginEnd="28dp"
         android:background="@drawable/border"
         android:ems="10"
-        android:hint="    비밀번호"
+        android:hint="비밀번호"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/et_id"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.562"
-        app:layout_constraintStart_toStartOf="@+id/et_id"
-        app:layout_constraintTop_toBottomOf="@+id/et_id" />
-
-    <EditText
-        android:id="@+id/but5_bar"
-        android:layout_width="104dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#ABAAAA"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/button5"
-        app:layout_constraintStart_toStartOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/et_pass" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="22dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="456dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="366dp"
         android:background="#00ff0000"
         android:fontFamily="sans-serif"
-        android:text="비밀번호를 잊으셨나요?"
         android:textAlignment="center"
+        android:text="비밀번호를 잊으셨나요?"
         android:textColor="#ABAAAA"
         android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="@+id/et_pass"
-        app:layout_constraintStart_toStartOf="@+id/et_pass"
-        app:layout_constraintTop_toBottomOf="@+id/et_pass" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_login"
-        android:layout_width="328sp"
-        android:layout_height="55sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
-        android:background="@drawable/button_round"
+        android:layout_marginBottom="13dp"
+        android:background="#EBD8CA"
         android:text="로그인"
         android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="@+id/et_pass"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/et_pass"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="127sp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="582dp"
+        android:layout_marginBottom="262dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/btn_login"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.744"
         app:srcCompat="@drawable/underline" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="25dp"
         android:layout_height="22dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="571dp"
+        android:layout_marginBottom="251dp"
         android:background="#00ff0000"
         android:text="또는"
         android:textSize="13sp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.723" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="127sp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="582dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="262dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btn_login"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.711"
         app:srcCompat="@drawable/underline" />
-
-    <EditText
-        android:id="@+id/register_bar"
-        android:layout_width="70dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#ABAAAA"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="@+id/btn_register"
-        app:layout_constraintStart_toStartOf="@+id/btn_register"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
 
     <Button
         android:id="@+id/btn_register"
         android:layout_width="wrap_content"
         android:layout_height="22dp"
         android:layout_marginStart="165dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="609dp"
         android:layout_marginEnd="159dp"
+        android:layout_marginBottom="213dp"
         android:background="#00ff0000"
         android:text="처음 오셨나요?"
         android:textColor="#ABAAAA"
         android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
