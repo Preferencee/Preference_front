@@ -121,8 +121,8 @@
         android:layout_width="80dp"
         android:layout_height="41dp"
         android:layout_marginTop="4dp"
-        android:text="오리엔탈"
         android:backgroundTint="#F1F0F0"
+        android:text="오리엔탈"
         app:layout_constraintStart_toStartOf="@+id/button2"
         app:layout_constraintTop_toBottomOf="@+id/button2"
         tools:ignore="MissingConstraints" />
@@ -132,11 +132,11 @@
         android:layout_width="80dp"
         android:layout_height="41dp"
         android:layout_marginTop="4dp"
-        android:text="스파이시"
         android:backgroundTint="#F1F0F0"
+        android:text="스파이시"
         app:layout_constraintTop_toBottomOf="@+id/button12"
-        tools:layout_editor_absoluteX="33dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="33dp" />
 
     <Button
         android:id="@+id/button19"
@@ -144,8 +144,8 @@
         android:layout_height="41dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
-        android:text="파우더리"
         android:backgroundTint="#F1F0F0"
+        android:text="파우더리"
         app:layout_constraintStart_toEndOf="@+id/button17"
         app:layout_constraintTop_toBottomOf="@+id/button15"
         tools:ignore="MissingConstraints" />
@@ -156,8 +156,8 @@
         android:layout_height="41dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
-        android:text="워터리"
         android:backgroundTint="#F1F0F0"
+        android:text="워터리"
         app:layout_constraintStart_toEndOf="@+id/button19"
         app:layout_constraintTop_toBottomOf="@+id/button14"
         tools:ignore="MissingConstraints" />
@@ -168,8 +168,8 @@
         android:layout_height="41dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
-        android:text="플로럴"
         android:backgroundTint="#F1F0F0"
+        android:text="플로럴"
         app:layout_constraintStart_toEndOf="@+id/button16"
         app:layout_constraintTop_toBottomOf="@+id/button13"
         tools:ignore="MissingConstraints" />
@@ -179,8 +179,8 @@
         android:layout_width="80dp"
         android:layout_height="41dp"
         android:layout_marginTop="4dp"
-        android:text="드라이"
         android:backgroundTint="#F1F0F0"
+        android:text="드라이"
         app:layout_constraintStart_toStartOf="@+id/button8"
         app:layout_constraintTop_toBottomOf="@+id/button8"
         tools:ignore="MissingConstraints" />
@@ -191,8 +191,8 @@
         android:layout_height="41dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="12dp"
-        android:text="시트러스"
         android:backgroundTint="#F1F0F0"
+        android:text="시트러스"
         app:layout_constraintStart_toEndOf="@+id/button6"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         tools:ignore="MissingConstraints" />
@@ -203,8 +203,8 @@
         android:layout_height="41dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="12dp"
-        android:text="우디"
         android:backgroundTint="#F1F0F0"
+        android:text="우디"
         app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
         tools:ignore="MissingConstraints" />
@@ -226,11 +226,11 @@
         android:layout_width="80dp"
         android:layout_height="41dp"
         android:layout_marginStart="4dp"
-        android:text="아로마틱"
         android:backgroundTint="#F1F0F0"
+        android:text="아로마틱"
         app:layout_constraintStart_toEndOf="@+id/button8"
-        tools:layout_editor_absoluteY="670dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="670dp" />
 
     <Button
         android:id="@+id/button13"
@@ -238,8 +238,8 @@
         android:layout_height="41dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
-        android:text="레더리"
         android:backgroundTint="#F1F0F0"
+        android:text="레더리"
         app:layout_constraintStart_toEndOf="@+id/button12"
         app:layout_constraintTop_toBottomOf="@+id/button9"
         tools:ignore="MissingConstraints" />
@@ -250,8 +250,8 @@
         android:layout_height="41dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
-        android:text="민티"
         android:backgroundTint="#F1F0F0"
+        android:text="민티"
         app:layout_constraintStart_toEndOf="@+id/button15"
         app:layout_constraintTop_toBottomOf="@+id/button11"
         tools:ignore="MissingConstraints" />
@@ -260,8 +260,8 @@
         android:id="@+id/button15"
         android:layout_width="80dp"
         android:layout_height="41dp"
-        android:text="마린"
         android:backgroundTint="#F1F0F0"
+        android:text="마린"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="202dp"
         tools:layout_editor_absoluteY="761dp" />
@@ -272,8 +272,8 @@
         android:layout_height="41dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
-        android:text="허니"
         android:backgroundTint="#F1F0F0"
+        android:text="허니"
         app:layout_constraintStart_toEndOf="@+id/button9"
         app:layout_constraintTop_toBottomOf="@+id/button6"
         tools:ignore="MissingConstraints" />
@@ -284,8 +284,8 @@
         android:layout_height="41dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
-        android:text="메탈릭"
         android:backgroundTint="#F1F0F0"
+        android:text="메탈릭"
         app:layout_constraintStart_toEndOf="@+id/button8"
         app:layout_constraintTop_toBottomOf="@+id/button3"
         tools:ignore="MissingConstraints" />
@@ -296,8 +296,8 @@
         android:layout_height="41dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
-        android:text="그린"
         android:backgroundTint="#F1F0F0"
+        android:text="그린"
         app:layout_constraintStart_toEndOf="@+id/button10"
         app:layout_constraintTop_toBottomOf="@+id/button7"
         tools:ignore="MissingConstraints" />

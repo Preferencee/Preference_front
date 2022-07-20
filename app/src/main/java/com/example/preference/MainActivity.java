@@ -1,15 +1,14 @@
 package com.example.preference;
-import androidx.appcompat.app.AppCompatActivity;
-import android.graphics.Paint;
-import android.os.Bundle;
-import android.text.Html;
-import android.widget.TextView;
 
-public class LoginActivity extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_main);
     }
 }
