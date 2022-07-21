@@ -4,5 +4,43 @@
     <string name="underlined_text">
         <u>underline</u>.
     </string>
-
+    <string name="StringValue">이미지가 열리지 않습니다</string>
+    <string name="Id">아이디</string>
+    <string name="password">비밀번호</string>
+    <string name="login">로그인</string>
+    <string name="forget_passwd">비밀번호를 잊으셨나요?</string>
+    <string name="또는">또는</string>
+    <string name="처음오셨나요">처음 오셨나요?</string>
+    <string name="signin">회원가입</string>
+    <string name="signin_text">회원가입</string>
+    <string name="email">비밀번호</string>
+    <string name="passwd_check">비밀번호 확인</string>
+    <string name="email_text">이메일</string>
+    <string name="nickname">닉네임</string>
+    <string name="birth">생년원일</string>
+    <string name="sex">성별</string>
+    <string name="category_pick">좋아하는 향수 카테고리</string>
+    <string name="doubleCheck">중복확인</string>
+    <string name="doubleCheck_nick">중복확인</string>
+    <string name="spicy">스파이시</string>
+    <string name="oriental">오리엔탈</string>
+    <string name="powdery">파우더리</string>
+    <string name="watery">워터리</string>
+    <string name="floral">플로럴</string>
+    <string name="dry">드라이</string>
+    <string name="woody">우디</string>
+    <string name="citrus">시트러스</string>
+    <string name="musk">머스크</string>
+    <string name="minty">민티</string>
+    <string name="honey">허니</string>
+    <string name="green">그린</string>
+    <string name="leather">레더리</string>
+    <string name="aromatic">아로마틱</string>
+    <string name="marine">마린</string>
+    <string name="metalic">메탈릭</string>
+    <string name="write_email">이메일을 입력해주세요</string>
+    <string name="write_nick">닉네임을 입력해주세요</string>
+    <string name="write_birth">생년월일을 입력해주세요</string>
+    <string name="male">남자</string>
+    <string name="female">여자</string>
 </resources>
