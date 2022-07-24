@@ -17,7 +17,8 @@
         android:title="취향테스트" />
 
     <item
-        android:id="@+id/navigation_mypage"
+        android:id="@+id/navigation_user"
         android:icon="@drawable/user"
         android:title="마이페이지" />
+
 </menu>
