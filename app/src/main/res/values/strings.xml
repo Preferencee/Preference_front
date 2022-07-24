@@ -43,4 +43,5 @@
     <string name="write_birth">생년월일을 입력해주세요</string>
     <string name="male">남자</string>
     <string name="female">여자</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>
