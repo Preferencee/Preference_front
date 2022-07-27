@@ -12,6 +12,7 @@
     <string name="forget_passwd">비밀번호를 잊으셨나요?</string>
     <string name="또는">또는</string>
     <string name="처음오셨나요">처음 오셨나요?</string>
+    <string name="로그아웃">로그아웃</string>
     <string name="signin">회원가입</string>
     <string name="signin_text">회원가입</string>
     <string name="email">비밀번호</string>

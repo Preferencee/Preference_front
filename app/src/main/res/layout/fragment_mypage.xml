@@ -6,6 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".ui.mypage.MypageFragment">
 
+    <Button
+        android:id="@+id/btn_register2"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:background="#00ff0000"
+        android:text="@string/로그아웃"
+        android:textColor="#9E9E9E"
+        android:textSize="11sp"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="630dp" />
+
+    <EditText
+        android:id="@+id/register_bar3"
+        android:layout_width="58dp"
+        android:layout_height="23dp"
+        android:autofillHints="username"
+        android:backgroundTint="#9E9E9E"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/btn_register2"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="@+id/btn_register2"
+        tools:layout_editor_absoluteY="652dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="410sp"
+        android:layout_height="212sp"
+        android:src="@drawable/gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="135dp" />
+
     <TextView
         android:id="@+id/text_mypage"
         android:layout_width="match_parent"
@@ -20,23 +62,95 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="410sp"
-        android:layout_height="212sp"
-        android:background="@drawable/gradient"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="60dp"
         android:background="@android:color/transparent"
         android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="53dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/settings"
+        tools:layout_editor_absoluteX="330dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/notice"
+        tools:layout_editor_absoluteX="299dp"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="8dp"
+        android:layout_height="9dp"
+        android:layout_marginTop="-4dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/notice_1"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton5"
+        app:layout_constraintStart_toStartOf="@+id/imageButton5"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/pencil"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="330sp"
+        android:layout_height="55sp"
+        android:background="@drawable/button_round_1"
+        android:gravity="left|center"
+        android:text="  찜한 목록"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView9" />
+        tools:layout_editor_absoluteY="395dp" />
+
+    <Button
+        android:id="@+id/button22"
+        android:layout_width="330sp"
+        android:layout_height="55sp"
+        android:background="@drawable/button_round_1"
+        android:gravity="left|center"
+        android:text="  문의사항"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/button24"
+        app:layout_constraintStart_toStartOf="@+id/button24"
+        tools:layout_editor_absoluteY="464dp" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="330sp"
+        android:layout_height="55sp"
+        android:background="@drawable/button_round_1"
+        android:gravity="left|center"
+        android:text="  개인정보 처리방침"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/button22"
+        app:layout_constraintStart_toStartOf="@+id/button22"
+        tools:layout_editor_absoluteY="528dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/underline_1"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="276dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
