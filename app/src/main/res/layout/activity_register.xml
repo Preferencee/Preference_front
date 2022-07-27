@@ -361,7 +361,6 @@
         android:ems="10"
         android:fontFamily="@font/inter"
         android:inputType="textPassword"
-        android:text="HGHGHGH"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
@@ -401,5 +400,29 @@
         android:text="@string/female"
         app:layout_constraintStart_toEndOf="@+id/checkBox"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="12dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/button_vector"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/button_vector" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="12dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/button_vector"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/button_vector" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

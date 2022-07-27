@@ -13,18 +13,17 @@
 
     <fragment
         android:id="@+id/navigation_mypage"
-        android:name="com.example.preference.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
+        android:name="com.example.preference.ui.mypage.MypageFragment"
+        android:label="@string/title_mypage"
         tools:layout="@layout/fragment_mypage" />
 
     <fragment
         android:id="@+id/navigation_test"
-        android:name="com.example.preference.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:name="com.example.preference.ui.test.TestFragment"
+        android:label="@string/title_test"
         tools:layout="@layout/fragment_test" />
     <fragment
         android:id="@+id/navigation_community"
-        android:name="com.example.preference.BlankFragment"
-        android:label="fragment_community"
-        tools:layout="@layout/fragment_community" />
+        android:name="com.example.preference.ui.community.CommunityFragment"
+        android:label="@string/title_communnity" />
 </navigation>

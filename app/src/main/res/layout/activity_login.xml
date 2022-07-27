@@ -4,24 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/AppTheme.NoActionBar"
     tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="206dp"
-        android:layout_marginEnd="156dp"
-        android:layout_marginBottom="596dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="150dp"
+        android:contentDescription="@string/app_name_korean"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo"
-        android:contentDescription="@string/StringValue"/>
+        app:srcCompat="@drawable/logo" />
 
     <EditText
         android:id="@+id/et_id"
@@ -56,16 +50,16 @@
 
     <EditText
         android:id="@+id/but5_bar"
-        android:layout_width="104dp"
+        android:layout_width="120dp"
         android:layout_height="30dp"
         android:layout_marginTop="20dp"
+        android:autofillHints="username"
         android:backgroundTint="#ABAAAA"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/button5"
         app:layout_constraintStart_toStartOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/et_pass"
-        android:autofillHints="username" />
+        app:layout_constraintTop_toBottomOf="@+id/et_pass" />
 
     <Button
         android:id="@+id/button5"
@@ -77,7 +71,7 @@
         android:text="@string/forget_passwd"
         android:textAlignment="center"
         android:textColor="#ABAAAA"
-        android:textSize="10sp"
+        android:textSize="11sp"
         app:layout_constraintEnd_toEndOf="@+id/et_pass"
         app:layout_constraintStart_toStartOf="@+id/et_pass"
         app:layout_constraintTop_toBottomOf="@+id/et_pass" />
@@ -133,17 +127,17 @@
 
     <EditText
         android:id="@+id/register_bar"
-        android:layout_width="70dp"
+        android:layout_width="78dp"
         android:layout_height="26dp"
         android:layout_marginTop="16dp"
+        android:autofillHints="username"
         android:backgroundTint="#ABAAAA"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="@+id/btn_register"
         app:layout_constraintHorizontal_bias="0.388"
         app:layout_constraintStart_toStartOf="@+id/btn_register"
-        app:layout_constraintTop_toBottomOf="@+id/button4"
-        android:autofillHints="username" />
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
 
     <Button
         android:id="@+id/btn_register"
@@ -155,7 +149,7 @@
         android:background="#00ff0000"
         android:text="@string/처음오셨나요"
         android:textColor="#ABAAAA"
-        android:textSize="10sp"
+        android:textSize="11sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
