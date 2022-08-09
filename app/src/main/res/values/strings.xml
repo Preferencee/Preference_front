@@ -50,5 +50,6 @@
     <string name="title_mypage">mypage</string>
     <string name="title_test">test</string>
     <string name="title_communnity">community</string>
-    <string name ="title_activity_main">activity_main</string>
+    <string name="title_activity_main">activity_main</string>
+    <string name="gradient">gradient</string>
 </resources>
