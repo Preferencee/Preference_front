@@ -20,16 +20,19 @@
         <entry key="..\:/Preference_front/app/src/main/res/drawable/ic_baseline_favorite_24_1.xml" value="0.1185" />
         <entry key="..\:/Preference_front/app/src/main/res/drawable/ic_baseline_trending_up_24.xml" value="0.1185" />
         <entry key="..\:/Preference_front/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1" />
+        <entry key="..\:/Preference_front/app/src/main/res/drawable/ic_launcher_background.xml" value="0.149" />
         <entry key="..\:/Preference_front/app/src/main/res/drawable/menu_selector_color.xml" value="0.1245" />
         <entry key="..\:/Preference_front/app/src/main/res/layout/activity_community.xml" value="0.1585144927536232" />
-        <entry key="..\:/Preference_front/app/src/main/res/layout/activity_community_1.xml" value="0.1" />
+        <entry key="..\:/Preference_front/app/src/main/res/layout/activity_community_1.xml" value="0.264" />
         <entry key="..\:/Preference_front/app/src/main/res/layout/activity_community_2.xml" value="0.264" />
         <entry key="..\:/Preference_front/app/src/main/res/layout/activity_communitysearch.xml" value="0.1" />
         <entry key="..\:/Preference_front/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Preference_front/app/src/main/res/layout/activity_main.xml" value="0.176" />
-        <entry key="..\:/Preference_front/app/src/main/res/layout/activity_mainsearch.xml" value="0.24947916666666667" />
+        <entry key="..\:/Preference_front/app/src/main/res/layout/activity_main_info.xml" value="0.24230072463768115" />
+        <entry key="..\:/Preference_front/app/src/main/res/layout/activity_mainsearch.xml" value="0.264" />
         <entry key="..\:/Preference_front/app/src/main/res/layout/activity_mypage.xml" value="0.1585144927536232" />
         <entry key="..\:/Preference_front/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/Preference_front/app/src/main/res/layout/activity_search.xml" value="0.264" />
         <entry key="..\:/Preference_front/app/src/main/res/layout/activity_test.xml" value="0.1585144927536232" />
         <entry key="..\:/Preference_front/app/src/main/res/layout/fragment_community.xml" value="0.2" />
         <entry key="..\:/Preference_front/app/src/main/res/layout/fragment_dashboard.xml" value="0.24947916666666667" />
