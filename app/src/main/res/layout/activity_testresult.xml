@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="756dp"
+        android:fontFamily="@font/inter"
+        android:text="취향 테스트 결과"
+        android:textColor="#000000"
+        android:textFontWeight="600"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="386dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/perfume" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="45dp"
+        android:fontFamily="@font/inter"
+        android:text="추천 향수는 Her 블로섬 오드트왈렛입니다."
+        android:textColor="#000000"
+        android:textFontWeight="400"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="224dp"
+        android:fontFamily="@font/inter"
+        android:text="밝은 에너지의 Her 블로섬은 꽃으로 가득한 런던을 향한 러브 레터입니다. 화사한 매화꽃 노트가 어우러진 오리지널 오드퍼퓸의 구르망 시그니처 향수. 상큼한 만다린과 크리미한 샌들우드 그리고 편안함을 주는 머스크 노트가 따뜻하고 풍부한 향을 선사합니다."
+        android:textColor="#000000"
+        android:textFontWeight="500"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+    <Button
+        android:id="@+id/button52"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="660dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="129dp"
+        android:background="@drawable/button_round"
+        android:text="상품 정보 보러 가기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.51" />
+</androidx.constraintlayout.widget.ConstraintLayout>
