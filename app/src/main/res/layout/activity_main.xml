@@ -3,9 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:paddingTop="?attr/actionBarSize">
+
+    <Button
+        android:id="@+id/button26"
+        android:layout_width="40dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="20dp"
+        android:background="#00ff0000"
+        android:text="리뷰순"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/searchView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/button21"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
@@ -19,7 +33,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
+        app:menu="@menu/bottom_nav_menu" >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <fragment
         android:id="@+id/nav_host_fragment_activity_main"
@@ -34,5 +50,572 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:navGraph="@navigation/mobile_navigation2" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="19dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="192dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="770dp"
+        android:fontFamily="@font/inter"
+        android:text="홈"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_host_fragment_activity_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginBottom="771dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/searchView"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/userlogo" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="329dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="702dp"
+        android:background="@drawable/searchable_round"
+        android:setSubmitButtonEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="총395건"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/searchView"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="40dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="93dp"
+        android:background="#00ff0000"
+        android:onClick="sendMessage"
+        android:text="최신순"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/searchView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="13dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="79dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:srcCompat="@drawable/barrier" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="40dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="27dp"
+        android:background="#00ff0000"
+        android:text="랭킹순"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/button26"
+        app:layout_constraintStart_toEndOf="@+id/button21"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="146dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:srcCompat="@drawable/barrier" />
+
+    <Button
+        android:id="@+id/button27"
+        android:layout_width="86dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="192dp"
+        android:background="@drawable/searchable_round"
+        android:paddingTop="10px"
+        android:paddingEnd="11px"
+        android:paddingRight="14px"
+        android:paddingBottom="14px"
+        android:text="카테고리 >"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="223dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/searchView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button27"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="193dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:scrollbars="none">
+
+            <Button
+                android:id="@+id/button28"
+                android:layout_width="64dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/category_design"
+                android:textColor="#9E9E9E"
+                tools:layout_editor_absoluteX="143dp"
+                tools:layout_editor_absoluteY="255dp"
+                tools:text="@string/musk" />
+
+            <Button
+                android:id="@+id/button29"
+                android:layout_width="64dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/category_design"
+                android:text="@string/aromatic"
+                android:textColor="#9E9E9E"
+                tools:layout_editor_absoluteX="157dp"
+                tools:layout_editor_absoluteY="341dp" />
+
+            <Button
+                android:id="@+id/button30"
+                android:layout_width="64dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/category_design"
+                android:text="@string/woody"
+                android:textColor="#9E9E9E"
+                tools:layout_editor_absoluteX="157dp"
+                tools:layout_editor_absoluteY="341dp" />
+
+            <Button
+                android:id="@+id/button31"
+                android:layout_width="64dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/category_design"
+                android:text="@string/citrus"
+                android:textColor="#9E9E9E"
+                tools:layout_editor_absoluteX="157dp"
+                tools:layout_editor_absoluteY="341dp" />
+
+            <Button
+                android:id="@+id/button32"
+                android:layout_width="64dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/category_design"
+                android:text="@string/oriental"
+                android:textColor="#9E9E9E"
+                tools:layout_editor_absoluteX="157dp"
+                tools:layout_editor_absoluteY="341dp" />
+
+            <Button
+                android:id="@+id/button33"
+                android:layout_width="64dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/category_design"
+                android:text="@string/metalic"
+                android:textColor="#9E9E9E"
+                tools:layout_editor_absoluteX="157dp"
+                tools:layout_editor_absoluteY="341dp" />
+
+            <Button
+                android:id="@+id/button34"
+                android:layout_width="64dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/category_design"
+                android:text="@string/honey"
+                android:textColor="#9E9E9E"
+                tools:layout_editor_absoluteX="157dp"
+                tools:layout_editor_absoluteY="341dp" />
+
+            <Button
+                android:id="@+id/button35"
+                android:layout_width="64dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/category_design"
+                android:text="@string/green"
+                android:textColor="#9E9E9E"
+                tools:layout_editor_absoluteX="157dp"
+                tools:layout_editor_absoluteY="341dp" />
+
+            <Button
+                android:id="@+id/button36"
+                android:layout_width="64dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/category_design"
+                android:text="@string/dry"
+                android:textColor="#9E9E9E"
+                tools:layout_editor_absoluteX="157dp"
+                tools:layout_editor_absoluteY="341dp" />
+
+            <Button
+                android:id="@+id/button37"
+                android:layout_width="64dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/category_design"
+                android:text="@string/leather"
+                android:textColor="#9E9E9E"
+                tools:layout_editor_absoluteX="157dp"
+                tools:layout_editor_absoluteY="341dp" />
+
+            <Button
+                android:id="@+id/button38"
+                android:layout_width="64dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/category_design"
+                android:text="@string/marine"
+                android:textColor="#9E9E9E"
+                tools:layout_editor_absoluteX="157dp"
+                tools:layout_editor_absoluteY="341dp" />
+
+            <Button
+                android:id="@+id/button39"
+                android:layout_width="64dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/category_design"
+                android:text="@string/minty"
+                android:textColor="#9E9E9E"
+                tools:layout_editor_absoluteX="157dp"
+                tools:layout_editor_absoluteY="341dp" />
+
+            <Button
+                android:id="@+id/button40"
+                android:layout_width="64dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/category_design"
+                android:text="@string/spicy"
+                android:textColor="#9E9E9E"
+                tools:layout_editor_absoluteX="157dp"
+                tools:layout_editor_absoluteY="341dp" />
+
+            <Button
+                android:id="@+id/button41"
+                android:layout_width="64dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/category_design"
+                android:text="@string/floral"
+                android:textColor="#9E9E9E"
+                tools:layout_editor_absoluteX="157dp"
+                tools:layout_editor_absoluteY="341dp" />
+
+            <Button
+                android:id="@+id/button42"
+                android:layout_width="64dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/category_design"
+                android:text="@string/powdery"
+                android:textColor="#9E9E9E"
+                tools:layout_editor_absoluteX="157dp"
+                tools:layout_editor_absoluteY="341dp" />
+
+            <Button
+                android:id="@+id/button43"
+                android:layout_width="64dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/category_design"
+                android:text="@string/watery"
+                android:textColor="#9E9E9E"
+                tools:layout_editor_absoluteX="157dp"
+                tools:layout_editor_absoluteY="341dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/button47"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/like"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="440dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/her_blossom" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/inter"
+        android:text="#플로럴"
+        android:textColor="#000000"
+        android:textFontWeight="700"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Her 블로섬 EDT"
+        android:textColor="#000000"
+        android:fontFamily="@font/inter"
+        android:textFontWeight="500"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="148sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="밝은 에너지의 Her 블로썸은 꽃으로 가득한 런던을 향한 러브 레터입니다."
+        android:textColor="#9E9E9E"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="211dp"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="440dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/missdiol_blooming" />
+
+    <Button
+        android:id="@+id/button48"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:background="@drawable/like"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/inter"
+        android:text="#머스크"
+        android:textColor="#000000"
+        android:textFontWeight="700"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="미스 디올 블루밍 부케"
+        android:textColor="#000000"
+        android:fontFamily="@font/inter"
+        android:textFontWeight="500"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="148sp"
+        android:layout_height="wrap_content"
+        android:text="미스 디올의 블루밍 부케는 꽃으로 수 놓인 드레스처럼 아름답게 조향된 산뜻하고 빛나는 향기를 선사하는 오 드 뚜왈렛입니다."
+        android:textColor="#9E9E9E"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="148sp"
+        android:layout_height="148sp"
+        android:layout_marginTop="82dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:srcCompat="@drawable/girlish_edp" />
+
+    <Button
+        android:id="@+id/button49"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:background="@drawable/like"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/inter"
+        android:text="#허니"
+        android:textColor="#000000"
+        android:textFontWeight="700"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EDP 걸리쉬"
+        android:textColor="#000000"
+        android:fontFamily="@font/inter"
+        android:textFontWeight="500"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="148sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="마달리아는 자연의 향기를 담았습니다."
+        android:textColor="#9E9E9E"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="82dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:srcCompat="@drawable/tiffany_rosegold" />
+
+    <Button
+        android:id="@+id/button50"
+        android:layout_width="20dp"
+        android:layout_height="18dp"
+        android:background="@drawable/like"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+        app:layout_constraintEnd_toEndOf="@+id/imageView12"
+        app:layout_constraintStart_toStartOf="@+id/imageView12"
+        app:layout_constraintTop_toTopOf="@+id/imageView12" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/inter"
+        android:text="#플로럴"
+        android:textColor="#000000"
+        android:textFontWeight="700"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView12"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="티파니 로즈 골드 EDP"
+        android:textColor="#000000"
+        android:textFontWeight="500"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="148sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="로베르테의 조향사, 제롬 에피네트의 손을 거쳐 탄생한 향수는 신선하며 매혹적인 블랙커런트 향을 톱노트로 사용해 반짝이는 느낌을 선사합니다. "
+        android:textColor="#9E9E9E"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/textView21"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
