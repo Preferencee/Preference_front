@@ -22,9 +22,6 @@
             android:name=".MainInfoActivity"
             android:exported="false" />
         <activity
-            android:name=".CommunitysearchActivity"
-            android:exported="false" />
-        <activity
             android:name=".Community2Activity"
             android:exported="false" />
         <activity

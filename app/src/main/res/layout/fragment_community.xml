@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.community.CommunityFragment">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="?attr/actionBarSize">
 
     <TextView
         android:id="@+id/text_community"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -19,4 +19,322 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-</FrameLayout>
+
+    <Button
+        android:id="@+id/button26"
+        android:layout_width="40dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:background="#00ff0000"
+        android:text="스크랩순"
+        android:textSize="10sp"
+        app:srcCompat="@drawable/barrier"
+        app:layout_constraintEnd_toEndOf="@+id/searchView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:itemIconTint="@drawable/menu_selector_color"
+        app:itemTextColor="@drawable/menu_selector_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginBottom="756dp"
+        android:fontFamily="@font/inter"
+        android:text="커뮤니티"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="763dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/searchView"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07999998"
+        app:srcCompat="@drawable/my" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="329dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="702dp"
+        android:background="@drawable/searchable_round"
+        android:setSubmitButtonEnabled="true"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="총395건"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/searchView"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="40dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="93dp"
+        android:background="#00ff0000"
+        android:text="최신순"
+        android:textSize="10sp"
+        android:onClick="sendMessage"
+        app:layout_constraintEnd_toEndOf="@+id/searchView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="13dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="79dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:srcCompat="@drawable/barrier" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="40dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="27dp"
+        android:background="#00ff0000"
+        android:text="랭킹순"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/button26"
+        app:layout_constraintStart_toEndOf="@+id/button21"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="13dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="146dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:srcCompat="@drawable/barrier" />
+
+    <Button
+        android:id="@+id/button27"
+        android:layout_width="86dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="192dp"
+        android:background="@drawable/searchable_round"
+        android:paddingTop="10px"
+        android:paddingEnd="11px"
+        android:paddingRight="14px"
+        android:paddingBottom="14px"
+        android:text="카테고리 >"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="223dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/searchView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button27"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="193dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:scrollbars="none">
+
+
+            <Button
+                android:id="@+id/button44"
+                android:layout_width="64dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/category_design"
+                android:textColor="#9E9E9E"
+                tools:layout_editor_absoluteX="143dp"
+                tools:layout_editor_absoluteY="255dp"
+                tools:text="구매후기" />
+
+            <Button
+                android:id="@+id/button45"
+                android:layout_width="64dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/category_design"
+                android:textColor="#9E9E9E"
+                tools:layout_editor_absoluteX="143dp"
+                tools:layout_editor_absoluteY="255dp"
+                tools:text="공동구매" />
+
+            <Button
+                android:id="@+id/button46"
+                android:layout_width="64dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="13dp"
+                android:background="@drawable/category_design"
+                android:textColor="#9E9E9E"
+                tools:layout_editor_absoluteX="143dp"
+                tools:layout_editor_absoluteY="255dp"
+                tools:text="꿀팁" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="309dp"
+        android:layout_marginTop="684dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="101dp"
+        android:backgroundTint="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pencil" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="3dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintStart_toStartOf="@+id/button27"
+        app:layout_constraintTop_toBottomOf="@+id/button27"
+        app:srcCompat="@drawable/yellow_line" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="21dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="251dp"
+
+        android:text="구매후기"
+        android:textColor="#9E9E9E"
+        android:textFontWeight="600"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView13"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="25dp"
+        android:text="샤넬 향수 지속력이 너무 좋아요!"
+        android:textColor="#000000"
+        android:textFontWeight="600"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/textView23"
+        app:layout_constraintTop_toBottomOf="@+id/button27" />
+
+    <TextView
+        android:id="@+id/editTextDate"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="72dp"
+        android:ems="10"
+        android:inputType="date"
+        android:text="06/12 08:01"
+        android:textColor="#D8D8D8"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button27" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="12dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toEndOf="@+id/editTextDate"
+        app:layout_constraintTop_toBottomOf="@+id/button27"
+        app:srcCompat="@drawable/redheart" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="23dp"
+        android:text="11"
+        android:textColor="#ACACAC"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintTop_toBottomOf="@+id/button27" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="얼마 전에 샤넬 향수를 처음 써봤는데 향도 좋고 무엇보다 지속력!"
+        android:textColor="#9E9E9E"
+        android:textFontWeight="500"
+        android:textSize="11sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView24"
+        tools:layout_editor_absoluteX="83dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="345dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView13"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:srcCompat="@drawable/borderline" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -84,7 +84,7 @@
         app:layout_constraintStart_toEndOf="@+id/textView10"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/userlogo" />
+        app:srcCompat="@drawable/my" />
 
     <SearchView
         android:id="@+id/searchView"

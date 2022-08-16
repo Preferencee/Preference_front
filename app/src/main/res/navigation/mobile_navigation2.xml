@@ -25,5 +25,6 @@
     <fragment
         android:id="@+id/navigation_community"
         android:name="com.example.preference.ui.community.CommunityFragment"
-        android:label="@string/title_communnity" />
+        android:label="@string/title_communnity"
+        tools:layout="@layout/fragment_community"/>
 </navigation>

@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.preference.databinding.FragmentCommunityBinding;
+import com.example.preference.databinding.FragmentHomeBinding;
 import com.example.preference.databinding.FragmentMypageBinding;
 import com.example.preference.ui.mypage.MypageViewModel;
 
