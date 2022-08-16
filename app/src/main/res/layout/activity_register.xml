@@ -10,25 +10,23 @@
         android:id="@+id/btn_login2"
         android:layout_width="320sp"
         android:layout_height="55sp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/button_round"
         android:text="@string/signin"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button18"
-        app:layout_constraintHorizontal_bias="0.517"
-        app:layout_constraintStart_toStartOf="@+id/button16"
-        app:layout_constraintTop_toBottomOf="@+id/button19"
-        app:layout_constraintVertical_bias="0.611" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="94sp"
-        android:layout_height="26sp"
-        android:layout_marginStart="33dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/inter"
         android:text="@string/signin_text"
         android:textColor="#000000"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -102,303 +100,111 @@
     <Button
         android:id="@+id/button"
         android:layout_width="88sp"
-        android:layout_height="41sp"
-        android:layout_marginTop="163dp"
+        android:layout_height="31sp"
+        android:layout_marginBottom="16dp"
         android:background="#E9E9E9"
         android:text="@string/doubleCheck"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName" />
 
     <Button
         android:id="@+id/button20"
         android:layout_width="88sp"
-        android:layout_height="41sp"
-        android:layout_marginTop="437dp"
+        android:layout_height="31sp"
+        android:layout_marginBottom="16dp"
         android:background="#E9E9E9"
         android:text="@string/doubleCheck_nick"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName5"
         app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="80dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#F1F0F0"
-        android:text="@string/oriental"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button16"
-        android:layout_width="80dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#F1F0F0"
-        android:text="@string/spicy"
-        app:layout_constraintStart_toStartOf="@+id/button12"
-        app:layout_constraintTop_toBottomOf="@+id/button12"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button19"
-        android:layout_width="80dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#F1F0F0"
-        android:text="@string/powdery"
-        app:layout_constraintStart_toEndOf="@+id/button17"
-        app:layout_constraintTop_toBottomOf="@+id/button15"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button18"
-        android:layout_width="80dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#F1F0F0"
-        android:text="@string/watery"
-        app:layout_constraintStart_toEndOf="@+id/button19"
-        app:layout_constraintTop_toBottomOf="@+id/button14"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button17"
-        android:layout_width="80dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#F1F0F0"
-        android:text="@string/floral"
-        app:layout_constraintStart_toEndOf="@+id/button16"
-        app:layout_constraintTop_toBottomOf="@+id/button13"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="80dp"
-        android:layout_height="41dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#F1F0F0"
-        android:text="@string/dry"
-        app:layout_constraintStart_toStartOf="@+id/button8"
-        app:layout_constraintTop_toBottomOf="@+id/button8"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="80dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="15dp"
-        android:backgroundTint="#F1F0F0"
-        android:text="@string/citrus"
-        app:layout_constraintStart_toEndOf="@+id/button6"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="80dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="15dp"
-        android:backgroundTint="#F1F0F0"
-        android:text="@string/woody"
-        app:layout_constraintStart_toEndOf="@+id/button3"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="80dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="15dp"
-        android:backgroundTint="#F1F0F0"
-        android:text="@string/musk"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="80dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="15dp"
-        android:backgroundTint="#F1F0F0"
-        android:text="@string/aromatic"
-        app:layout_constraintStart_toEndOf="@+id/button8"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button13"
-        android:layout_width="80dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#F1F0F0"
-        android:text="@string/leather"
-        app:layout_constraintStart_toEndOf="@+id/button12"
-        app:layout_constraintTop_toBottomOf="@+id/button9"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="80dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#F1F0F0"
-        android:text="@string/minty"
-        app:layout_constraintStart_toEndOf="@+id/button15"
-        app:layout_constraintTop_toBottomOf="@+id/button11"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button15"
-        android:layout_width="80dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#F1F0F0"
-        android:text="@string/marine"
-        app:layout_constraintStart_toEndOf="@+id/button13"
-        app:layout_constraintTop_toBottomOf="@+id/button10"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="80dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#F1F0F0"
-        android:text="@string/honey"
-        app:layout_constraintStart_toEndOf="@+id/button9"
-        app:layout_constraintTop_toBottomOf="@+id/button6"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="80dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#F1F0F0"
-        android:text="@string/metalic"
-        app:layout_constraintStart_toEndOf="@+id/button8"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="80dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="#F1F0F0"
-        android:text="@string/green"
-        app:layout_constraintEnd_toEndOf="@+id/button7"
-        app:layout_constraintStart_toEndOf="@+id/button10"
-        app:layout_constraintTop_toBottomOf="@+id/button7"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="326dp"
         android:layout_height="39dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="@null"
         android:ems="10"
         android:fontFamily="@font/inter"
         android:hint="@string/write_email"
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        android:autofillHints="@null" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
         android:id="@+id/editTextTextPersonName4"
         android:layout_width="328dp"
         android:layout_height="41dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="nickname"
         android:ems="10"
         android:fontFamily="@font/inter"
         android:hint="@string/write_nick"
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        android:autofillHints="nickname"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
         android:layout_width="328dp"
         android:layout_height="41dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="birth"
         android:ems="10"
         android:fontFamily="@font/inter"
         android:hint="@string/write_birth"
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName4"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        android:autofillHints="birth"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="326dp"
         android:layout_height="41dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="password"
         android:ems="10"
         android:fontFamily="@font/inter"
         android:inputType="textPassword"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        android:autofillHints="password"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="328dp"
         android:layout_height="41dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="passwordCheck"
         android:ems="10"
         android:fontFamily="@font/inter"
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        android:autofillHints="passwordCheck"/>
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="0dp"
         android:layout_height="18dp"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="16dp"
+        android:autofillHints="username"
         android:text="@string/male"
         app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
-        android:autofillHints="username" />
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
 
     <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="0dp"
         android:layout_height="18dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
         android:checked="true"
         android:text="@string/female"
         app:layout_constraintStart_toEndOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+        app:layout_constraintTop_toTopOf="@+id/checkBox" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -423,5 +229,204 @@
         app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName2"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/button_vector" />
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        tools:layout_editor_absoluteX="1dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleLine="true"
+            app:singleSelection="false"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="564dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip1"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="머스크"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="58dp"
+                tools:layout_editor_absoluteY="558dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip2"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아로마틱"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="58dp"
+                tools:layout_editor_absoluteY="558dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip3"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="우디"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="58dp"
+                tools:layout_editor_absoluteY="558dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip4"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="시트러스"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="58dp"
+                tools:layout_editor_absoluteY="558dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip5"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오리엔탈"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="58dp"
+                tools:layout_editor_absoluteY="558dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip6"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="메탈릭"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="58dp"
+                tools:layout_editor_absoluteY="558dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip7"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="허니"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="58dp"
+                tools:layout_editor_absoluteY="558dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip8"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="그린"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="58dp"
+                tools:layout_editor_absoluteY="558dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip9"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="드라이"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="58dp"
+                tools:layout_editor_absoluteY="558dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip10"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="레더리"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="58dp"
+                tools:layout_editor_absoluteY="558dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip11"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="마린"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="58dp"
+                tools:layout_editor_absoluteY="558dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip12"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="민티"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="58dp"
+                tools:layout_editor_absoluteY="558dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip13"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="스파이시"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="58dp"
+                tools:layout_editor_absoluteY="558dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip14"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="플로럴"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="58dp"
+                tools:layout_editor_absoluteY="558dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip15"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="파우더리"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="58dp"
+                tools:layout_editor_absoluteY="558dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip16"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="워터리"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="58dp"
+                tools:layout_editor_absoluteY="558dp" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </HorizontalScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
