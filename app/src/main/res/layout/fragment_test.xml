@@ -3,20 +3,353 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.test.TestFragment">
+    android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/text_test"
-        android:layout_width="match_parent"
+        android:id="@+id/textView27"
+        android:layout_width="98dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="756dp"
+        android:fontFamily="@font/inter"
+        android:text="취향테스트"
+        android:textColor="#000000"
+        android:textFontWeight="600"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="223dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="711dp"
+        android:fontFamily="@font/inter"
+        android:text="1. 평소에 어떤 향을 좋아하시나요?"
+        android:textColor="#000000"
+        android:textFontWeight="600"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="11dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/inter"
+            android:text="바다를 연상케 하는 상쾌하고 시원한 향기"
+            android:textColor="#000000"
+            android:textFontWeight="400"
+            android:textSize="13sp" />
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="꽃, 허브나 과일 등 자연의 달콤하고 상큼한 향기"
+            android:textColor="#000000"
+            android:textFontWeight="400"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/radio_group"
+            app:layout_constraintTop_toBottomOf="@+id/radio_group" />
+        <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나무, 풀 등 초록색을 연상케 하는 숲속 향기"
+        android:fontFamily="@font/inter"
+        android:textColor="#000000"
+        android:textFontWeight="400"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="@+id/radio_group"
+        app:layout_constraintTop_toBottomOf="@+id/radio_group" />
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="차분하고 깊이있는 도시의 향기"
+            android:fontFamily="@font/inter"
+            android:textColor="#000000"
+            android:textFontWeight="400"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/radio_group"
+            app:layout_constraintTop_toBottomOf="@+id/radio_group" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=" 2. 선호하는 향기는 무엇인가요?"
+        android:fontFamily="@font/inter"
+        android:textColor="#000000"
+        android:textFontWeight="600"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/textView28"
+        app:layout_constraintTop_toBottomOf="@+id/radio_group" />
+
+    <RadioGroup
+        android:id="@+id/radio_group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toStartOf="@+id/radio_group"
+        app:layout_constraintTop_toBottomOf="@+id/textView29">
+
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="로즈마리, 라벤더 등의 허브 향기(아로마틱)"
+            android:textColor="#000000"
+            android:textFontWeight="400"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/radio_group"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="레몬, 오렌지, 감귤류의 상큼한 향기(시트러스)"
+            android:textColor="#000000"
+            android:textFontWeight="400"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/radio_group"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="여러 꽃 향기가 어우러진 향기(플로럴)"
+            android:textColor="#000000"
+            android:textFontWeight="400"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/radio_group"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="꿀처럼 달콤한 향기(허니)"
+            android:textColor="#000000"
+            android:textFontWeight="400"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/radio_group"
+            app:layout_constraintTop_toBottomOf="@+id/textView29" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text=" 3. 행복해지는 느낌의 단어를 골라주세요!"
+        android:fontFamily="@font/inter"
+        android:textColor="#000000"
+        android:textFontWeight="600"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/radio_group2" />
+
+    <RadioGroup
+        android:id="@+id/radio_group3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toStartOf="@+id/radio_group2"
+        app:layout_constraintTop_toBottomOf="@+id/textView30">
+
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="차분하고 깊이있는"
+            android:textColor="#000000"
+            android:textFontWeight="400"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/radio_group2"
+            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+        <RadioButton
+            android:id="@+id/radioButton10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="상큼하고 통통튀는"
+            android:textColor="#000000"
+            android:textFontWeight="400"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/radio_group2"
+            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+        <RadioButton
+            android:id="@+id/radioButton11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="깔끔하고 가벼운"
+            android:textColor="#000000"
+            android:textFontWeight="400"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/radio_group2"
+            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+        <RadioButton
+            android:id="@+id/radioButton12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="달콤하고 부드러운"
+            android:textColor="#000000"
+            android:textFontWeight="400"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/radio_group2"
+            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text=" 4. 선호하는 브랜드가 있으신가요?"
+        android:fontFamily="@font/inter"
+        android:textColor="#000000"
+        android:textFontWeight="600"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/radio_group3" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="279dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/searchable_round"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/radio_group3"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:text=" 5. 성별을 이야기 해주세요!"
+        android:fontFamily="@font/inter"
+        android:textColor="#000000"
+        android:textFontWeight="600"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/textView31"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName6"
+        app:layout_constraintTop_toBottomOf="@+id/textView32">
+
+        <RadioButton
+            android:id="@+id/radioButton14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="남성"
+            android:textColor="#000000"
+            android:textFontWeight="400"
+            android:textSize="13sp"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="777dp" />
+        <RadioButton
+            android:id="@+id/radioButton15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="여성"
+            tools:layout_editor_absoluteX="55dp"
+            tools:layout_editor_absoluteY="777dp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/gotoTestResult"
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="303dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="101dp"
+        android:background="@drawable/circle"
+        android:text="결과 >"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:itemIconTint="@drawable/menu_selector_color"
+        app:itemTextColor="@drawable/menu_selector_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <fragment
+        android:id="@+id/nav_host_fragment_activity_main"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@id/nav_view"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:navGraph="@navigation/mobile_navigation2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
