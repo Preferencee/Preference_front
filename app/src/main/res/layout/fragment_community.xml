@@ -159,6 +159,7 @@
         android:paddingRight="14dp"
         android:paddingBottom="14dp"
         android:text="카테고리 >"
+        android:textColor="#000000"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
