@@ -13,7 +13,6 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.preference.databinding.ActivityMainBinding;
 public class WriteCommunityActivity extends AppCompatActivity {
     private ArrayAdapter adapter;
     private Spinner spinner;

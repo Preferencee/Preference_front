@@ -4,10 +4,10 @@ import com.google.gson.annotations.SerializedName;
 
 import java.util.Date;
 
-public class LoginResponse {
+public class LoginRes {
 
     @SerializedName("userId")
-    private String userId;
+    private Integer userId;
 
     @SerializedName("email")
     private String email;
@@ -18,5 +18,4 @@ public class LoginResponse {
                 "userId=" + email +
                 '}';
     }
-
 }
