@@ -25,6 +25,7 @@
         android:layout_marginStart="38dp"
         android:layout_marginTop="62dp"
         android:background="@android:color/transparent"
+        android:contentDescription="@null"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_arrow_back_ios_new_24" />
@@ -58,19 +59,23 @@
         android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="내용"
         android:textColor="#DADADA"
-        tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="198dp" />
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName6"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
 
     <EditText
         android:id="@+id/editTextTextPersonName6"
         android:layout_width="332dp"
         android:layout_height="39dp"
+        android:layout_marginTop="41dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="제목"
         android:textColor="#DADADA"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="131dp" />
+        android:importantForAutofill="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
 </androidx.constraintlayout.widget.ConstraintLayout>

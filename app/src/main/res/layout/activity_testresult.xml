@@ -32,6 +32,7 @@
         android:layout_marginTop="158dp"
         android:layout_marginEnd="45dp"
         android:layout_marginBottom="386dp"
+        android:contentDescription="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +50,7 @@
         android:text="추천 향수는 Her 블로섬 오드트왈렛입니다."
         android:textColor="#000000"
         android:textFontWeight="400"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView16" />
@@ -64,7 +65,7 @@
         android:text="밝은 에너지의 Her 블로섬은 꽃으로 가득한 런던을 향한 러브 레터입니다. 화사한 매화꽃 노트가 어우러진 오리지널 오드퍼퓸의 구르망 시그니처 향수. 상큼한 만다린과 크리미한 샌들우드 그리고 편안함을 주는 머스크 노트가 따뜻하고 풍부한 향을 선사합니다."
         android:textColor="#000000"
         android:textFontWeight="500"
-        android:textSize="11dp"
+        android:textSize="11sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,7 +103,7 @@
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment_activity_main"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
